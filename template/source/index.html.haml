@@ -1,0 +1,816 @@
+---
+title: Welcome to Middleman-Semantic-UI
+---
+
+.ui.container
+
+  %h1 Welcome to Middleman-Semantic-UI
+
+  %h2.ui.dividing.header Site
+
+  .ui.three.column.stackable.grid
+    .column
+      %h1 Heading 1
+      %h2 Heading 2
+      %h3 Heading 3
+      %h4 Heading 4
+      %h5 Heading 5
+      %p Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+    .column
+      %h2 Example body text
+      %p
+        Nullam quis risus eget
+        %a{:href => "#"} urna mollis ornare
+        vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+      %p
+        %small This line of text is meant to be treated as fine print.
+      %p
+        The following snippet of text is
+        = succeed "." do
+          %strong rendered as bold text
+      %p
+        The following snippet of text is
+        = succeed "." do
+          %em rendered as italicized text
+      %p
+        An abbreviation of the word attribute is
+        = succeed "." do
+          %abbr{:title => "attribute"} attr
+    .column
+      .ui.three.column.stackable.padded.middle.aligned.centered.color.grid
+        .red.column Red
+        .orange.column Orange
+        .yellow.column Yellow
+        .olive.column Olive
+        .green.column Green
+        .teal.column Teal
+        .blue.column Blue
+        .violet.column Violet
+        .purple.column Purple
+        .pink.column Pink
+        .brown.column Brown
+        .grey.column Grey
+        .black.column Black
+
+  %h2.ui.dividing.header Menu
+
+  .ui.menu
+    .header.item Brand
+    %a.active.item Link
+    %a.item Link
+    .ui.dropdown.item
+      Dropdown
+      %i.dropdown.icon
+      .menu
+        .item Action
+        .item Another Action
+        .item Something else here
+        .divider
+        .item Separated Link
+        .divider
+        .item One more separated link
+    .right.menu
+      .item
+        .ui.action.left.icon.input
+          %i.search.icon
+          %input{:placeholder => "Search", :type => "text"}/
+          %button.ui.button Submit
+      %a.item Link
+  .ui.inverted.menu
+    .header.item Brand
+    .active.item Link
+    %a.item Link
+    .ui.dropdown.item
+      Dropdown
+      %i.dropdown.icon
+      .menu
+        .item Action
+        .item Another Action
+        .item Something else here
+        .divider
+        .item Separated Link
+        .divider
+        .item One more separated link
+    .right.menu
+      .item
+        .ui.transparent.inverted.icon.input
+          %i.search.icon
+          %input{:placeholder => "Search", :type => "text"}/
+      %a.item Link
+  .ui.secondary.menu
+    .active.item Link
+    %a.item Link
+    .ui.dropdown.item
+      Dropdown
+      %i.dropdown.icon
+      .menu
+        .item Action
+        .item Another Action
+        .item Something else here
+        .divider
+        .item Separated Link
+        .divider
+        .item One more separated link
+    .right.menu
+      .item
+        .ui.action.left.icon.input
+          %i.search.icon
+          %input{:placeholder => "Search", :type => "text"}/
+          %button.ui.button Submit
+      %a.item Link
+  .ui.three.column.doubling.grid
+    .column
+      .ui.secondary.pointing.menu
+        .active.item Link
+        %a.item Link
+        %a.item Link
+    .column
+      .ui.tabular.menu
+        .active.item Link
+        %a.item Link
+        %a.item Link
+    .column
+      .ui.pointing.menu
+        .active.item Link
+        %a.item Link
+        .right.item
+          Right Text
+
+  %h2.ui.dividing.header Table
+
+  .ui.two.column.relaxed.grid
+    .column
+      %table.ui.right.aligned.table
+        %thead
+          %th.left.aligned Person
+          %th Calories
+          %th Fat
+          %th Protein
+        %tbody
+          %tr
+            %td.left.aligned Delmar
+            %td 36
+            %td 36g
+            %td 2g
+          %tr
+            %td.left.aligned Louise
+            %td 24
+            %td 24g
+            %td 29g
+          %tr
+            %td.left.aligned Terrell
+            %td 22
+            %td 11g
+            %td 9g
+          %tr
+            %td.left.aligned Marion
+            %td 7
+            %td 35g
+            %td 3g
+          %tr
+            %td.left.aligned Clayton
+            %td 7
+            %td 38g
+            %td 20g
+    .column
+      %table.ui.right.aligned.celled.table
+        %thead
+          %th.left.aligned Person
+          %th Calories
+          %th Fat
+          %th Protein
+        %tbody
+          %tr
+            %td.left.aligned Drema
+            %td.positive 15
+            %td.negative 26g
+            %td.warning 8g
+          %tr.positive
+            %td.left.aligned Nona
+            %td 11
+            %td 21g
+            %td 16g
+          %tr.negative
+            %td.left.aligned Isidra
+            %td 34
+            %td 43g
+            %td 11g
+          %tr.warning
+            %td.left.aligned Bart
+            %td 41
+            %td 40g
+            %td 30g
+          %tr.selected
+            %td.left.aligned Nguyet
+            %td 41
+            %td 44g
+            %td 28g
+    .column
+      %table.ui.basic.right.aligned.table
+        %thead
+          %th.left.aligned Person
+          %th Calories
+          %th Fat
+          %th Protein
+        %tbody
+          %tr
+            %td.left.aligned Mirna
+            %td 1
+            %td 28g
+            %td 29g
+          %tr
+            %td.left.aligned Fernando
+            %td 38
+            %td 2g
+            %td 48g
+          %tr
+            %td.left.aligned Lisette
+            %td 18
+            %td 9g
+            %td 23g
+          %tr
+            %td.left.aligned Ahmad
+            %td 42
+            %td 26g
+            %td 49g
+          %tr
+            %td.left.aligned Laquanda
+            %td 27
+            %td 27g
+            %td 49g
+    .column
+      %table.ui.very.basic.right.aligned.table
+        %thead
+          %th.left.aligned Person
+          %th Calories
+          %th Fat
+          %th Protein
+        %tbody
+          %tr
+            %td.left.aligned Drema
+            %td 15
+            %td 26g
+            %td 8g
+          %tr
+            %td.left.aligned Nona
+            %td 11
+            %td 21g
+            %td 16g
+          %tr
+            %td.left.aligned Isidra
+            %td 34
+            %td 43g
+            %td 11g
+          %tr
+            %td.left.aligned Bart
+            %td 41
+            %td 40g
+            %td 30g
+          %tr
+            %td.left.aligned Nguyet
+            %td 41
+            %td 44g
+            %td 28g
+    .column
+      %table.ui.celled.selectable.right.aligned.table
+        %thead
+          %th.left.aligned Person
+          %th Calories
+          %th Fat
+          %th Protein
+        %tbody
+          %tr
+            %td.left.aligned Tasia
+            %td 12
+            %td 7g
+            %td 21g
+          %tr
+            %td.left.aligned Ronnie
+            %td 38
+            %td 37g
+            %td 38g
+          %tr
+            %td.left.aligned Gabriel
+            %td 30
+            %td 46g
+            %td 46g
+          %tr
+            %td.left.aligned Logan
+            %td 12
+            %td 21g
+            %td 39g
+          %tr
+            %td.left.aligned Clare
+            %td 39
+            %td 41g
+            %td 2g
+    .column
+      %table.ui.striped.right.aligned.table
+        %thead
+          %th.left.aligned Person
+          %th Calories
+          %th Fat
+          %th Protein
+        %tbody
+          %tr
+            %td.left.aligned Rosaline
+            %td 5
+            %td 35g
+            %td 6g
+          %tr
+            %td.left.aligned Barrie
+            %td 27
+            %td 23g
+            %td 28g
+          %tr
+            %td.left.aligned Trinidad
+            %td 14
+            %td 50g
+            %td 7g
+          %tr
+            %td.left.aligned Jaqueline
+            %td 31
+            %td 30g
+            %td 50g
+          %tr
+            %td.left.aligned Tamala
+            %td 18
+            %td 6g
+            %td 13g
+    .column
+      %table.ui.padded.celled.right.aligned.table
+        %thead
+          %th.left.aligned Person
+          %th Calories
+          %th Fat
+          %th Protein
+        %tbody
+          %tr
+            %td.left.aligned Lianne
+            %td 23
+            %td 32g
+            %td 43g
+          %tr
+            %td.left.aligned Joette
+            %td 21
+            %td 13g
+            %td 31g
+          %tr
+            %td.left.aligned Le
+            %td 28
+            %td 39g
+            %td 23g
+          %tr
+            %td.left.aligned Sacha
+            %td 46
+            %td 43g
+            %td 13g
+          %tr
+            %td.left.aligned Bruna
+            %td 9
+            %td 47g
+            %td 12g
+    .column
+      %table.ui.definition.celled.right.aligned.table
+        %thead
+          %th
+          %th Calories
+          %th Fat
+          %th Protein
+        %tbody
+          %tr
+            %td.left.aligned Lianne
+            %td 23
+            %td 32g
+            %td 43g
+          %tr
+            %td.left.aligned Joette
+            %td 21
+            %td 13g
+            %td 31g
+          %tr
+            %td.left.aligned Le
+            %td 28
+            %td 39g
+            %td 23g
+          %tr
+            %td.left.aligned Sacha
+            %td 46
+            %td 43g
+            %td 13g
+          %tr
+            %td.left.aligned Bruna
+            %td 9
+            %td 47g
+            %td 12g
+    .column
+      %table.ui.inverted.right.aligned.table
+        %thead
+          %th.left.aligned Person
+          %th Calories
+          %th Fat
+          %th Protein
+        %tbody
+          %tr
+            %td.left.aligned Lianne
+            %td 23
+            %td 32g
+            %td 43g
+          %tr
+            %td.left.aligned Joette
+            %td 21
+            %td 13g
+            %td 31g
+          %tr
+            %td.left.aligned Le
+            %td 28
+            %td 39g
+            %td 23g
+          %tr
+            %td.left.aligned Sacha
+            %td 46
+            %td 43g
+            %td 13g
+          %tr
+            %td.left.aligned Bruna
+            %td 9
+            %td 47g
+            %td 12g
+    .column
+      %table.ui.inverted.blue.selectable.celled.right.aligned.table
+        %thead
+          %th.left.aligned Person
+          %th Calories
+          %th Fat
+          %th Protein
+        %tbody
+          %tr
+            %td.left.aligned Lianne
+            %td 23
+            %td 32g
+            %td 43g
+          %tr
+            %td.left.aligned Joette
+            %td 21
+            %td 13g
+            %td 31g
+          %tr
+            %td.left.aligned Le
+            %td 28
+            %td 39g
+            %td 23g
+          %tr
+            %td.left.aligned Sacha
+            %td 46
+            %td 43g
+            %td 13g
+          %tr
+            %td.left.aligned Bruna
+            %td 9
+            %td 47g
+            %td 12g
+
+  %h2.ui.dividing.header Buttons
+
+  .ui.two.column.stackable.grid
+    .column
+      .ui.action.left.icon.input
+        %i.search.icon
+        %input{:placeholder => "Search...", :type => "text"}/
+        .ui.teal.button Search
+      .ui.divider
+      .ui.input.error
+        %input{:placeholder => "Search...", :type => "text"}/
+      .ui.divider
+      .ui.right.labeled.input
+        %input{:placeholder => "Placeholder", :type => "text"}/
+        .ui.dropdown.label
+          .text Dropdown
+          %i.dropdown.icon
+          .menu
+            .item Choice 1
+            .item Choice 2
+            .item Choice 3
+      .ui.divider
+      .ui.transparent.icon.input
+        %input{:placeholder => "Search...", :type => "text"}/
+        %i.search.icon
+      .ui.transparent.left.icon.input
+        %input{:placeholder => "Search...", :type => "text"}/
+        %i.search.icon
+      .ui.divider
+      .ui.left.icon.input.loading
+        %input{:placeholder => "Loading...", :type => "text"}/
+        %i.search.icon
+      .ui.icon.input.loading
+        %input{:placeholder => "Loading...", :type => "text"}/
+        %i.search.icon
+    .column
+      .ui.right.labeled.left.icon.input
+        %i.tags.icon
+        %input{:placeholder => "Enter tags", :type => "text"}/
+        %a.ui.tag.label
+          Add Tag
+      .ui.divider
+      .ui.labeled.input
+        %a.ui.label
+          Label
+        %input{:placeholder => "Placeholder...", :type => "text"}/
+      .ui.divider
+      .ui.right.labeled.input
+        %input{:placeholder => "Placeholder...", :type => "text"}/
+        %a.ui.label
+          Label
+      .ui.divider
+      .ui.labeled.icon.input
+        .ui.label
+          http://
+        %input{:placeholder => "domain.com", :type => "text"}/
+        %i.add.circle.link.icon
+      .ui.right.action.input
+        %input{:placeholder => "domain.com", :type => "text"}/
+        .ui.teal.button
+          %i.add.icon
+          Add
+      .ui.divider
+      .ui.corner.labeled.input
+        %input{:placeholder => "Required Field", :type => "text"}/
+        .ui.corner.label
+          %i.asterisk.icon
+
+  %h2.ui.dividing.header Input
+
+  .ui.stackable.equal.width.grid
+    .column
+      %button.ui.button Default
+      %button.ui.primary.button Primary
+      %button.ui.secondary.button Secondary
+      %button.ui.basic.button Basic
+      %button.ui.compact.button
+        Compact
+      .ui.divider
+      %button.ui.icon.button
+        %i.heart.icon
+      %button.ui.labeled.icon.button
+        %i.heart.icon
+        Labeled
+      %button.ui.right.labeled.icon.button
+        %i.heart.icon
+        Labeled
+      .ui.divider
+      .ui.buttons
+        %button.ui.button Combo
+        .ui.floating.dropdown.icon.button
+          %i.dropdown.icon
+          .menu
+            .item Choice 1
+            .item Choice 2
+            .item Choice 3
+      .ui.floating.search.dropdown.button
+        %span.text Search Dropdown
+        .menu
+          .item Arabic
+          .item Chinese
+          .item Danish
+          .item Dutch
+          .item English
+          .item French
+          .item German
+          .item Greek
+          .item Hungarian
+          .item Italian
+          .item Japanese
+          .item Korean
+          .item Lithuanian
+          .item Persian
+          .item Polish
+          .item Portuguese
+          .item Russian
+          .item Spanish
+          .item Swedish
+          .item Turkish
+          .item Vietnamese
+      .ui.divider
+      .ui.animated.button{:tabindex => "0"}
+        .visible.content Horizontal
+        .hidden.content
+          Hidden
+      .ui.vertical.animated.button{:tabindex => "0"}
+        .visible.content Vertical
+        .hidden.content
+          Hidden
+      .ui.animated.fade.button{:tabindex => "0"}
+        .visible.content Fade In
+        .hidden.content
+          Hidden
+      .ui.divider
+      %button.ui.disabled.button Disabled
+      %button.ui.loading.button Loading
+      .ui.divider
+      .ui.buttons
+        %button.ui.button 1
+        %button.ui.button 2
+        %button.ui.button 3
+      .ui.icon.buttons
+        %button.ui.button
+          %i.align.left.icon
+        %button.ui.button
+          %i.align.center.icon
+        %button.ui.button
+          %i.align.right.icon
+        %button.ui.button
+          %i.align.justify.icon
+      .ui.buttons
+        %button.ui.button 1
+        .or
+        %button.ui.button 2
+      .ui.divider
+      .ui.two.top.attached.buttons
+        .ui.button One
+        .ui.button Two
+      .ui.attached.segment
+        %img.ui.wireframe.image{:src => "images/paragraph.png"}/
+      .ui.two.bottom.attached.buttons
+        .ui.button One
+        .ui.button Two
+    .column
+      %button.ui.mini.button Mini
+      %button.ui.tiny.button Tiny
+      %button.ui.small.button Small
+      %button.ui.large.button Large
+      %button.ui.big.button Big
+      %button.ui.huge.button Huge
+      %button.ui.massive.button Massive
+      .ui.divider
+      .spaced
+        %button.yellow.ui.button Yellow
+        %button.orange.ui.button Orange
+        %button.green.ui.button Green
+        %button.teal.ui.button Teal
+        %button.blue.ui.button Blue
+        %button.purple.ui.button Purple
+        %button.pink.ui.button Pink
+        %button.red.ui.button Red
+        %button.black.ui.button Black
+      .ui.divider
+      .ui.inverted.segment
+        %button.ui.inverted.button Inverted
+        %button.ui.inverted.basic.button Basic
+        %button.ui.inverted.blue.button Colored
+        %button.ui.inverted.blue.basic.button Basic Colored
+
+  %h2.ui.dividing.header Card
+
+  .ui.four.cards
+    .ui.card
+      .image
+        .ui.blurring.inverted.dimmer
+          .content
+            .center
+              .ui.teal.button Add Friend
+        %img{:src => "images/image.png"}/
+      .content
+        .header Title
+        .meta
+          %a.group Meta
+        .description One or two sentence description that may go to several lines
+      .extra.content
+        %a.right.floated.created Arbitrary
+        %a.friends
+          Arbitrary
+    .ui.card
+      .blurring.dimmable.image
+        .ui.dimmer
+          .content
+            .center
+              .ui.inverted.button Call to Action
+        %img{:src => "images/image.png"}/
+      .content
+        %a.header Name
+        .meta
+          %span.date Date
+      .extra.content
+        %a
+          %i.users.icon
+          Users
+    .ui.card
+      .ui.slide.right.reveal.image
+        .visible.content
+          %img.ui.fluid.image{:src => "images/nan.jpg"}/
+        .hidden.content
+          %img.ui.fluid.image{:src => "images/tom.jpg"}/
+      .content
+        %img.ui.wireframe.image{:src => "images/paragraph.png"}/
+    .ui.card
+      .ui.move.reveal.image
+        .visible.content
+          %img.ui.fluid.image{:src => "images/tom.jpg"}/
+        .hidden.content
+          %img.ui.fluid.image{:src => "images/nan.jpg"}/
+      .content
+        %img.ui.wireframe.image{:src => "images/paragraph.png"}/
+  .ui.four.cards
+    .ui.card
+      .extra.content
+        %span.left.floated.like
+          %i.like.icon
+          Like
+        %span.right.floated.star
+          %i.star.icon
+          Favorite
+      .content
+        %img.ui.wireframe.image{:src => "images/paragraph.png"}/
+    .ui.card
+      .content
+        .header
+          %img.ui.avatar.right.spaced.image{:src => "images/square-image.png"}/
+          Abbreviated Header
+        .description
+          %img.ui.wireframe.image{:src => "images/paragraph.png"}/
+      .ui.two.bottom.attached.buttons
+        .ui.button
+          Action 1
+        .ui.button
+          Action 2
+    %a.ui.card{:href => "#"}
+      .content
+        .header Cute Dog
+        .meta
+          %span.category Animals
+        .description
+          %img.ui.wireframe.image{:src => "images/paragraph.png"}/
+      .extra.content
+        .right.floated.author
+          %img.ui.avatar.image{:src => "images/square-image.png"}/
+          Username
+    .ui.card
+      .ui.two.top.attached.basic.buttons
+        .ui.button
+          Action 1
+        .ui.button
+          Action 2
+      .content
+        %img.ui.wireframe.image{:src => "images/paragraph.png"}/
+      .ui.two.bottom.attached.basic.buttons
+        .ui.button
+          Action 3
+        .ui.button
+          Action 4
+  .ui.four.cards
+    .card
+      .content
+        Content 1
+      .content
+        Content 2
+      .content
+        Content 3
+      .extra.content
+        Extra Content
+    .card
+      .content
+        Content 1
+      .content
+        Content 2
+      .content
+        Content 3
+      .extra.content
+        Extra Content
+    .card
+      .content
+        Content 1
+      .content
+        Content 2
+      .content
+        Content 3
+      .extra.content
+        Extra Content
+    .card
+      .content
+        Content 1
+      .content
+        Content 2
+      .content
+        Content 3
+      .extra.content
+        Extra Content
+  .ui.four.cards
+    .card
+      .image
+        %img{:src => "images/image.png"}/
+      .extra.center.aligned
+        .ui.star.rating{"data-rating" => "4"}
+    .card
+      .image
+        %img{:src => "images/image.png"}/
+      .extra.center.aligned
+        .ui.star.rating{"data-rating" => "2"}
+    .card
+      .image
+        %img{:src => "images/image.png"}/
+      .extra.center.aligned
+        .ui.star.rating{"data-rating" => "3"}
+    .card
+      .image
+        %img{:src => "images/image.png"}/
+      .extra.center.aligned
+        .ui.star.rating{"data-rating" => "4"}
